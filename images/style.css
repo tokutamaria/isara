@@ -220,11 +220,11 @@ header {
     font-family: "Hiragino Kaku Gothic Pro" - 600;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     text-align: center;
 }
-.contact-date {
-
+.conversion .contact-date + .contact-date {
+    margin-top: 35px;
 }
 .conversion .call {
     width: 460px;
@@ -239,7 +239,7 @@ header {
     border-radius: 4px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top:15px;
 }
 .conversion .call .mark {
     font-size: 12px;
@@ -260,7 +260,7 @@ header {
     border-radius: 50px;
     opacity: .8;
     margin-top: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 65px;
 }
 .conversion a:hover {
     opacity: 1;
@@ -270,12 +270,14 @@ header {
     justify-content: center;
     align-items:center;
     color: #ffffff;
+    margin-top: 30px;
 }
 .conversion ul li {
-    font-size: 10px;
-    padding:  5px 10px;
-    background: #4267b2;
-    margin: 0 5px;
+    font-size: 12px;
+    padding:  4px 8px;
+    background: #2064eb;
+    margin: 0 2px;
+    border-radius: 3px;
 }
 .conversion ul li:nth-child(1) {
     background-color: #1b95e0;
