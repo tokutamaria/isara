@@ -111,6 +111,7 @@ header {
     width: 100%;
     position: fixed;
     background: #ffffff;
+    z-index: 1;
 }
 .header-in {
     width: 1170px;
@@ -123,25 +124,33 @@ header {
     /* background: green; */
 }
 .header-img {
-    width: 120px;
-    height: 40px;
+    width: 125px;
+    height: 45px;
     display: inline-block;
     vertical-align: middle;
     /* background: red; */
 }
 .header-title {
     position: absolute;
-    left: 120px;
+    left: 130px;
     top: 40px;
     height: 20px;
     line-height: 20px;
+    letter-spacing: 2px;
     font-size: 14px;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    font-weight: 600;
     /* background: orange; */
 }
 .header-contact {
+    width: 320px;
     background:#D84940;
-    padding: 10px 40px;
+    line-height: 45px;
+    letter-spacing: 2px;
+    text-align: center;
+    /* padding: 10px 40px; */
     border-radius: 30px;
+    opacity: .8;
 }
 .header-contact a {
     display: inline-block;
@@ -149,4 +158,125 @@ header {
      font-size: 14px;
      line-height: 22px;
      height: 22px;
+}
+/* --main-visual-- */
+.container-main {
+    width: 100%;
+    height: 580px;
+    background-image: url(/images/main.jpg);
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+}
+.main-visual {
+    width: 360px;
+    height: 320px;
+    margin: 0 auto;
+    padding-top: 170px;
+}
+.main-visual p {
+    font-size: 28px;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    font-weight: 600;
+    height: 55px;
+    line-height: 55px;
+    letter-spacing: 2px;
+    color: #333333;
+    text-align: center;
+}
+.main-visual h1 {
+    font-size: 20px;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    font-weight: 600;
+    height: 22px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color: #333333;
+    text-align: center;
+    padding-top: 32px;
+}
+.main-visual img {
+    width: 310px;
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+/* --conversion-- */
+.contact {
+    width: 100%;
+    height: 600px;
+    background: #EBB94D;
+}
+.conversion {
+    width: 1030px;
+    height: 530px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.conversion p {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.contact-date {
+
+}
+.conversion .call {
+    width: 460px;
+    height: 24px;
+    font-size: 18px;
+    font-family: Menlo - 600;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.conversion .call .mark {
+    font-size: 12px;
+    font-weight: bold;
+}
+.conversion a {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 28px;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    font-weight: 600;
+    height: 100px;
+    width: 1030px;
+    background:#D84940;
+    line-height: 100px;
+    letter-spacing: 2px;
+    text-align: center;
+    border-radius: 50px;
+    opacity: .8;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.conversion a:hover {
+    opacity: 1;
+}
+.conversion ul {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    color: #ffffff;
+}
+.conversion ul li {
+    font-size: 10px;
+    padding:  5px 10px;
+    background: #4267b2;
+    margin: 0 5px;
+}
+.conversion ul li:nth-child(1) {
+    background-color: #1b95e0;
 }
