@@ -102,5 +102,38 @@ input, select {
 }
 
 /* --RESET-- */
+* {
+ box-sizing: border-box;
+}
 
+header {
+ width: 100%;
+}
+.header-in {
+ width: 1170px;
+ height: 80px;
+ margin: 0 auto;
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ background: green;
+}
+.header-img img{
+ background: red;
+ width: 120px;
+ height: 40px;
+ display: inline-block;
+ position: absolute;
+ /* vertical-align: middle; */
 
+}
+.header-title {
+ display: inline-block;
+ height: 22px;
+ background: orange;
+ line-height: 22p;
+ font-size: 14px;
+}
+.header-contact {
+ display: inline-block;
+}
