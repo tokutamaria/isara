@@ -1112,3 +1112,190 @@ header {
     background: #006EA9;
     color: #ffffff;
 }
+/* --never-- */
+.never-support {
+    width: 100%;
+    height: 145px;
+    background: #006EA9;
+}
+.never-support p {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 32px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color:#ffffff;
+    text-align: center;
+    padding-top: 40px;
+}
+/* --flow-- */
+.flow {
+    width: 100%;
+    height: 1830px;
+    background: #ffffff;
+    padding-top: 60px;
+}
+.flow h2 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color:#333333;
+    text-align: center;
+}
+.flow .raptop {
+    font-size: 22px;
+    font-weight: 100;
+}
+.flow .flow-main-img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.flow-box {
+    width: 1170px;
+    height: 230px;
+    background: #FEF5E0;
+    display: flex;
+    /* align-items: center; */
+    margin: 0 auto;
+    /* margin-bottom: 50px; */
+    justify-content: space-between;
+    position: relative;
+}
+.flow-box:nth-child(1) {
+    margin-top: 40px;
+}
+.flow .flow-joint {
+    display: block;
+    margin: 0 auto;
+}
+.flow-box .flow-left {
+    width: 180px;
+    height: 180px;
+    margin-top: 25px;
+    margin-left: 40px;
+}
+.flow-box .flow-left > img {
+    display: block;
+    margin: 0 auto;
+}
+.flow-box .flow-left > p {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 29px;
+    line-height: 29px;
+    letter-spacing: 1px;
+    color:#333333;
+    text-align: center;
+    margin-top: 20px;
+}
+.flow-box .flow-right {
+    width: 900px;
+    height: 180px;
+    display: block;
+    position: absolute;
+    top: 35px;
+    left:240px;
+}
+.flow-box .flow-right p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 26px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color:#333333;
+    text-align: left;
+}
+.flow-box .flow-right p:nth-child(1) {
+    margin-bottom: 16px;
+}
+.flow-box .flow-right p:nth-child(2) {
+    margin-bottom: 16px;
+}
+.flow-box .flow-right .flow-text {
+    font-size: 14px;
+    font-weight: 300;
+    height: 22px;
+    line-height:22px;
+    letter-spacing: 1px;
+}
+.flow-box .flow-right .text-free {
+    margin-top: 40px;
+}
+.flow-box .home-work {
+    margin-top: 60px;
+}
+.flow-box .fly {
+    margin-top: 40px;
+}
+/* --bangkok-- */
+.bangkok {
+    width: 100%;
+    height: 500px;
+    background-image: url(/images/bangkokbg.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+}
+.bangkok-info {
+    width: 690px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    left: 15%;
+}
+.bangkok-info h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    color:#ffffff;
+    text-align: left;
+}
+.bangkok-info p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 22px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    color:#ffffff;
+    text-align: left;
+    opacity: .8;
+    margin: 24px 0;
+}
+.bangkok-info ul {
+    margin-top: 40px;
+}
+.bangkok-info ul li{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 26px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    color:#ffffff;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.bangkok-info h3 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 32px;
+    line-height: 32px;
+    letter-spacing: 1.5px;
+    color:#ffffff;
+    text-align: left;
+    padding-top: 16px;
+    opacity: 0.9;
+}
