@@ -1,14 +1,15 @@
 'use strict';
 
-const prev = document.getElementById('panel-head');
-const next = document.getElementsByClassName('panel-add');
+document.addEventListener("DOMContentLoaded" ,() => {
+  const title = document.querySelectorAll('.js-panel-head');
 
-prev.addEventListener('click' , function() {
-  if (next == true) {
-    prev.classList.remove("panel-add");
-    // prev.classList.abb("fa - angle - up")
-  } else {
-    let a = document.getElementById('panel-head');
-    a.classList.add("panel-add");
+  for (let i = 0; i < title.length; i++) {
+    let titleEach = title[i];
+    let content = titleEach.nextElementSibling;
+    titleEach.addEventListener('click', () => {
+      titleEach.classList.toggle('is-active');
+      content.classList.toggle('is-open');
+    });
   }
+
 });

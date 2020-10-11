@@ -1639,28 +1639,36 @@ header {
     padding-top: 60px;
     padding-bottom: 60px;
 }
-.questions #panel-head {
+.questions .panel-head {
     width: 1170px;
     height: 65px;
     display: block;
     margin: 0 auto;
     border: 1px solid #e5e5e5;
     margin-top: 80px;
+    user-select: none;
+    cursor: pointer;
     position: relative;
 }
-.questions #panel-head .fa-angle-down {
-    font-size: 32px;
-    color: #e5e5e5;
-    position: absolute;
-    right: 24px;
-    top: 16px;
+.panel-head::after {
+   content: "";
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-top: solid 2px #999;
+  border-right: solid 2px #999;
+  transform: translateY(-50%) rotate(135deg);
 }
-.questions #panel-head .fa-angle-up {
-    font-size: 32px;
-    color: #e5e5e5;
-    position: absolute;
-    right: 24px;
-    top: 16px;
+.panel-head.is-active::after  {
+  transform: translateY(-50%) rotate(315deg);
+}
+.pane-head::after {
+    transform: rotate(90deg);
+    transition-duration: .3s;
 }
 
 .questions a {
@@ -1683,31 +1691,28 @@ header {
     color:#5196C0;
 }
 .questions .panel-body {
+  padding: 0 1.5em;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition-duration: .3s;
+}
+
+.questions .panel-body.is-open {
     width: 1170px;
     height: 100px;
     display: block;
     margin: 0 auto;
     border-bottom: 1px solid #e5e5e5;
-    display: none;
-}
-.panel-add {
-    width: 1170px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-    border-bottom: 1px solid #e5e5e5;
-}
-.questions .panel-body p {
     font-size: 16px;
     font-weight: 600;
     font-family: "Hiragino Kaku Gothic Pro" - 600;
-    height: 26px;
     line-height: 26px;
     letter-spacing: 1px;
     color:#333333;
-    text-align: left;
-    display: inline-block;
     padding: 20px;
+    opacity: 1;
 }
 #panel-default{
     margin-top: -70px;
