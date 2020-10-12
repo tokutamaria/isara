@@ -1625,7 +1625,8 @@ header {
 /* --question-- */
 .questions {
     width: 100%;
-    height: 2600px;
+    height: auto;
+    padding-bottom: 60px;
 }
 .questions h2 {
     font-size: 28px;
@@ -1637,7 +1638,7 @@ header {
     color:#333333;
     text-align: center;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 .questions .panel-head {
     width: 1170px;
@@ -1651,20 +1652,20 @@ header {
     position: relative;
 }
 .panel-head::after {
-   content: "";
-  position: absolute;
-  right: 25px;
-  top: 50%;
-  transition: all 0.2s ease-in-out;
-  display: block;
-  width: 8px;
-  height: 8px;
-  border-top: solid 2px #999;
-  border-right: solid 2px #999;
-  transform: translateY(-50%) rotate(135deg);
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px #999;
+    border-right: solid 2px #999;
+    transform: translateY(-50%) rotate(135deg);
 }
 .panel-head.is-active::after  {
-  transform: translateY(-50%) rotate(315deg);
+    transform: translateY(-50%) rotate(315deg);
 }
 .pane-head::after {
     transform: rotate(90deg);
@@ -1682,21 +1683,23 @@ header {
     text-align: left;
     display: inline-block;
     padding-left: 16px;
+    user-select: none;
 }
 .questions a:hover {
     text-decoration: underline;
-    text-decoration-thickness: 10px;
+    /* text-decoration-thickness: 10px; */
 }
 .questions .fa-question-circle {
     color:#5196C0;
 }
 .questions .panel-body {
-  padding: 0 1.5em;
-  line-height: 0;
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition-duration: .3s;
+    padding: 0 1.5em;
+    visibility: hidden;
+    animation: tooltipShow 3.3s linear 5s;
+    width: 1170px;
+    height: 0px;
+    /* opacity: 0; */
+    transition: .1s;
 }
 
 .questions .panel-body.is-open {
@@ -1712,8 +1715,53 @@ header {
     letter-spacing: 1px;
     color:#333333;
     padding: 20px;
-    opacity: 1;
+    visibility: visible;
+    /* opacity: 1; */
+    transition: .4s;
 }
 #panel-default{
     margin-top: -70px;
+}
+/* --footer-- */
+.footer-wrapper {
+    width: 100%;
+    height: 175px;
+    display: block;
+    padding-top: 40px;
+    background: #ECECEC;
+}
+.footer-wrapper p {
+    font-size: 10px;
+    font-weight: 300;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    height: 16px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color:#333333;
+    text-align: center;
+}
+.footer-wrapper p:nth-child(3) {
+    margin-top: 30px;
+}
+.sns-list ul {
+    display: flex;
+    justify-content: center;
+}
+.sns-list li {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: "Hiragino Kaku Gothic Pro" - 600;
+    letter-spacing: 1px;
+    color:#ffffff;
+    margin: 2px;
+    margin-top: 24px;
+    padding: 2px 8px;
+    background: #1877F2;
+    border-radius: 4px;
+}
+.sns-list .footer-twitter {
+    background: #1B95E0;
+}
+.footer-wrapper .color-text {
+    color:#547495;
 }
